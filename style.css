@@ -1,0 +1,64 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pacifico", serif;
+}
+.lucky{
+    height: 100vh;
+    min-width: 100vh;
+    
+     background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(0,212,255,1) 96%);
+      position: relative;
+}
+.container{
+    
+    width: 800px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.watch{
+
+height: 100%;
+width: 100%;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+backdrop-filter: blur(20vh);
+
+}
+.watch span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: #f9f9f9;
+}
+.watch span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    color:burlywood;
+}
+#hours::after{
+    content: 'HOURS';
+    
+}
+#minits::after{
+    content: 'MINITS';
+}
+#second::after{
+    content: 'SECONDS';
+}
